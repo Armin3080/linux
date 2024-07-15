@@ -1,0 +1,59 @@
+body {
+    font-family: 'Anonymous Pro', monospace;
+    background:url("anonymous.gif") ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-image: image-set(url("back.jpg") 2x, url("back.jpg") 2x, url("back.jpg") 4x);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.file-input {
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    display: block;
+    margin: 0 auto;
+}
+
+button {
+    background: linear-gradient(145deg, #1e2a38, #283c4a);
+    color: #00ff00;
+    border: 2px solid #00ff00;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+button:hover {
+    background: linear-gradient(145deg, #283c4a, #1e2a38);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+button:active {
+    background: #1e2a38;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+}
