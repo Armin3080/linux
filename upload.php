@@ -32,7 +32,7 @@ if ($uploadOk == 0) {
 // If everything is ok, try to upload file
 } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-        $link = "https://armin3080.github.io/ananymous_uploder.site/" . $target_file;
+        $link = "https://armin3080.github.io/linux/" . $target_file;
         echo "The file ". htmlspecialchars(basename($_FILES["fileToUpload"]["name"])). " has been uploaded.<br>";
         echo "File link: <a href='" . $link . "'>" . $link . "</a>";
     } else {
